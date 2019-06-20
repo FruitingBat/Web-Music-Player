@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function () {
 		}
 
 		render() {
-			if (this.state.playback) { //Render pause button
+			if (this.state.playback) { //Render play button
 				return e(
 					'button', {
 						onClick: () => this.setState({ //Switch state on button click
@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', function () {
 				)
 			}
 
-			return e( //Render play button
+			return e( //Render pause button
 				'button', {
 					onClick: () => this.setState({
 						playback: true
