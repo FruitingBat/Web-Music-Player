@@ -2,35 +2,35 @@
 <html>
 
 <head>
-	<meta charset="UTF-8">
-	<title>waveTest</title>
+    <meta charset="UTF-8">
+    <title>waveTest</title>
+    <script src="https://unpkg.com/wavesurfer.js"></script> <!-- Wavesurfer library -->
+    <script src="main.js"></script>
 </head>
 
-<body>Music URL:
-	<div id="musicURL"></div> <!-- Displays URL of music -->
-	<br>
-	<div id="waveform"></div> <!-- Displays wavesurfer waveform -->
-	<br>
-	<div id="playPauseButton_container"></div> <!-- Toggles music playback -->
-	<br>
-	<br>Select Music:
-	<select id="selectMusicMenu"> <!-- Select music for playback -->
-		<option value="0">Music 1</option>
-		<option value="1">Music 2</option>
-		<option value="2">Music 3</option>
-		<option value="3">Music 4</option>
-		<option value="4">Music 5</option>
-		<option value="5">Music 6</option>
-		<option value="6">Music 7</option>
-		<option value="7">Music 8</option>
-		<option value="8">Music 9</option>
-		<option value="9">Music 10</option>
+<body>
+    Music Status:
+    <div id="musicStatus"></div> <!-- Displays Play/Pause/Loading status of music -->
+    <br> Music URL:
+    <div id="musicURL"></div> <!-- Displays URL of music -->
+    <br>
+    <div id="waveform"></div> <!-- Displays wavesurfer waveform -->
+    <br>
+    <button id="playPauseButton">||</button> <!-- Toggles music playback -->
+    <br>
+    <br> Select Music:
+    <select id="selectMusicMenu"> <!-- Select music for playback -->
+        <option value="0">Music 1</option>
+        <option value="1">Music 2</option>
+        <option value="2">Music 3</option>
+        <option value="3">Music 4</option>
+        <option value="4">Music 5</option>
+        <option value="5">Music 6</option>
+        <option value="6">Music 7</option>
+        <option value="7">Music 8</option>
+        <option value="8">Music 9</option>
+        <option value="9">Music 10</option>
     </select>
-    
-	<script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script> <!-- React library -->
-	<script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
-	<script src="https://unpkg.com/wavesurfer.js"></script> <!-- Wavesurfer library -->
-    	<script src="main.js"></script> <!-- Wavesurfer and React Logic -->
 </body>
 
 </html>
